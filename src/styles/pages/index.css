@@ -6,13 +6,18 @@
 /*---------------FONTES---------------*/
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('../../../assets/fontes/roboto/Roboto-Bold.ttf');
+    font-family: 'Quicksand';
+    src: url('../../../assets/fontes/quicksand/Quicksand_Book.otf');
 }
 
 @font-face {
-    font-family: 'Quicksand';
-    src: url('../../../assets/fontes/quicksand/Quicksand_Book.otf');
+    font-family: 'Roboto-light';
+    src: url('../../../assets/fontes/roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url('../../../assets/fontes/roboto/Roboto-Bold.ttf');
 }
 
 #pagina1 {
@@ -35,7 +40,7 @@
 #pagina1 .navbar1 .sidebar .sidebar-header {
     background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);;
     width: 220px;
-    height: 68px;
+    height: 72px;
 
     display: flex;
     justify-content: center;
@@ -44,8 +49,9 @@
 
 #pagina1 .navbar1 .sidebar .sidebar-header h1 {
     color: #ffffff;
-    font-family: Roboto;
+    font-family: Roboto-bold;
     font-size: 30px;
+    font-weight: bold;
 }
 
 /*---------------Sidebar Image---------------*/
@@ -61,7 +67,6 @@
     color: #725C5C;
     font-family: Quicksand;
     font-size: 15px;
-    font-weight: lighter;
 }
 
 #pagina1 .navbar1 .sidebar .sidebar-topics .apresentacao, .sidebar-topics .comites, .sidebar-topics .autores, .sidebar-topics .eixos-tematicos, .sidebar-topics .trabalhos, .sidebar-topics .contato {
@@ -92,3 +97,56 @@
     margin-left: 10.91%;
 }
 
+/*---------------NAVBAR---------------*/
+
+#pagina1 .navbar2 .navbar {
+    background-color: #FDF1EB;
+    width: 100%;
+    height: 72px;
+}
+
+#pagina1 .navbar2 .navbar .navbar-content {
+    position: absolute;
+    color: #725C5C;
+    font-family: Roboto-light;
+    font-size: 14px;
+    margin-left: 256px;
+    margin-top: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#pagina1 .navbar2 .navbar .navbar-content .frases .frase2 {
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+#pagina1 .navbar2 .navbar .navbar-content .selecao-lingua {
+    position: absolute;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    width: 97px;
+    height: 34px;
+    margin-left: 850px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagina1 .navbar2 .navbar .navbar-content .bem-vindo {
+    position: absolute;
+    margin-left: 1000px;
+    text-align: right;
+}
+
+#pagina1 .navbar2 .navbar .navbar-content .foto-perfil {
+    position: absolute;
+    margin-left: 1200px;
+}
+
+#pagina1 .navbar2 .navbar .navbar-content .foto-perfil img {
+    border-radius: 50%;
+}
