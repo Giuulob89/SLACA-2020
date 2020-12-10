@@ -1,0 +1,94 @@
+*, html, body {
+	margin:0;
+	padding:0;
+}
+
+/*---------------FONTES---------------*/
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../../assets/fontes/roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../../../assets/fontes/quicksand/Quicksand_Book.otf');
+}
+
+#pagina1 {
+    height: 100%;
+    width: 100%;
+}
+
+/*---------------SIDEBAR---------------*/
+
+#pagina1 .navbar1 .sidebar {
+    position: fixed;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    width: 220px;
+    height: 100%;
+}
+
+/*---------------Sidebar Header---------------*/
+
+#pagina1 .navbar1 .sidebar .sidebar-header {
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);;
+    width: 220px;
+    height: 68px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagina1 .navbar1 .sidebar .sidebar-header h1 {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 30px;
+}
+
+/*---------------Sidebar Image---------------*/
+
+#pagina1 .navbar1 .sidebar .sidebar-image img {
+    width: 220px;
+    height: 258px;
+}
+
+/*---------------Sidebar Topics---------------*/
+
+#pagina1 .navbar1 .sidebar .sidebar-topics {
+    color: #725C5C;
+    font-family: Quicksand;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+#pagina1 .navbar1 .sidebar .sidebar-topics .apresentacao, .sidebar-topics .comites, .sidebar-topics .autores, .sidebar-topics .eixos-tematicos, .sidebar-topics .trabalhos, .sidebar-topics .contato {
+    box-shadow: 0 2px 2px -2px gray;
+    width: 220px;
+    height: 33px;
+    margin-bottom: 0.5%;
+
+    display: flex;
+    align-items: center;
+}
+
+#pagina1 .navbar1 .sidebar .sidebar-topics .apresentacao, .sidebar-topics .comites, .sidebar-topics .autores, .sidebar-topics .eixos-tematicos, .sidebar-topics .contato {
+    background-color: #ffffff;
+}
+
+#pagina1 .navbar1 .sidebar-topics .trabalhos .little-box {
+    background: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
+    width: 5px;
+    height: 33px;
+}
+
+#pagina1 .navbar1 .sidebar-topics .trabalhos {
+    background-color: #FDF1EB;
+}
+
+#pagina1 .navbar1 .sidebar .sidebar-topics p {
+    margin-left: 10.91%;
+}
+
