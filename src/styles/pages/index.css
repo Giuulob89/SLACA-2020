@@ -20,6 +20,11 @@
     src: url('../../../assets/fontes/roboto/Roboto-Bold.ttf');
 }
 
+@font-face {
+    font-family: 'Roboto-medium';
+    src: url('../../../assets/fontes/roboto/Roboto-Medium.ttf')
+}
+
 #pagina1 {
     height: 100%;
     width: 100%;
@@ -27,7 +32,7 @@
 
 /*---------------SIDEBAR---------------*/
 
-#pagina1 .navbar1 .sidebar {
+.sidebar {
     position: fixed;
     background-color: #ffffff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -37,7 +42,7 @@
 
 /*---------------Sidebar Header---------------*/
 
-#pagina1 .navbar1 .sidebar .sidebar-header {
+.sidebar .sidebar-header {
     background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);;
     width: 220px;
     height: 72px;
@@ -47,7 +52,7 @@
     align-items: center;
 }
 
-#pagina1 .navbar1 .sidebar .sidebar-header h1 {
+.sidebar .sidebar-header h1 {
     color: #ffffff;
     font-family: Roboto-bold;
     font-size: 30px;
@@ -56,20 +61,20 @@
 
 /*---------------Sidebar Image---------------*/
 
-#pagina1 .navbar1 .sidebar .sidebar-image img {
+.sidebar .sidebar-image img {
     width: 220px;
     height: 258px;
 }
 
 /*---------------Sidebar Topics---------------*/
 
-#pagina1 .navbar1 .sidebar .sidebar-topics {
+.sidebar .sidebar-topics {
     color: #725C5C;
     font-family: Quicksand;
     font-size: 15px;
 }
 
-#pagina1 .navbar1 .sidebar .sidebar-topics .apresentacao, .sidebar-topics .comites, .sidebar-topics .autores, .sidebar-topics .eixos-tematicos, .sidebar-topics .trabalhos, .sidebar-topics .contato {
+.sidebar .sidebar-topics .apresentacao, .sidebar-topics .comites, .sidebar-topics .autores, .sidebar-topics .eixos-tematicos, .sidebar-topics .trabalhos, .sidebar-topics .contato {
     box-shadow: 0 2px 2px -2px gray;
     width: 220px;
     height: 33px;
@@ -79,93 +84,149 @@
     align-items: center;
 }
 
-#pagina1 .navbar1 .sidebar .sidebar-topics .apresentacao, .sidebar-topics .comites, .sidebar-topics .autores, .sidebar-topics .eixos-tematicos, .sidebar-topics .contato {
+.sidebar .sidebar-topics .apresentacao, .sidebar-topics .comites, .sidebar-topics .autores, .sidebar-topics .eixos-tematicos, .sidebar-topics .contato {
     background-color: #ffffff;
 }
 
-#pagina1 .navbar1 .sidebar-topics .trabalhos .little-box {
+.sidebar-topics .trabalhos .little-box {
     background: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
     width: 5px;
     height: 33px;
 }
 
-#pagina1 .navbar1 .sidebar-topics .trabalhos {
+.sidebar-topics .trabalhos {
     background-color: #FDF1EB;
 }
 
-#pagina1 .navbar1 .sidebar .sidebar-topics p {
+.sidebar .sidebar-topics p {
     margin-left: 10.91%;
 }
 
 /*---------------NAVBAR---------------*/
 
-#pagina1 .navbar2 {
-    display: flex;
-    justify-content: center;
-}
-
-#pagina1 .navbar2 .navbar {
+.navbar {
     background-color: #FDF1EB;
+    height: 72px;   
     width: 100%;
-    height: 72px;
+    margin-left: 220px;
+
+    display: flex;
 }
 
-#pagina1 .navbar2 .navbar .navbar-content {
-    position: absolute;
+.navbar .navbar-content {
     color: #725C5C;
     font-family: Roboto-light;
     font-size: 14px;
     margin-top: 5px;
-    margin-left: 18%;
+    margin-left: 36px;
 
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-#pagina1 .navbar2 .navbar .navbar-content .frases .frase2 {
+.navbar .navbar-content .frases .frase2 {
     font-size: 22px;
     margin-top: 5px;
 }
 
-#pagina1 .navbar2 .navbar .navbar-content .selecao-lingua {
-    position: absolute;
+.navbar .navbar-content .selecao-lingua {
     border: 1px solid #cccccc;
     border-radius: 3px;
     width: 97px;
     height: 34px;
-    margin-left: 120%;
+    margin-left: 210px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#pagina1 .navbar2 .navbar .navbar-content .bem-vindo {
-    position: absolute;
-    margin-left: 149%;
+.navbar .navbar-content .bem-vindo {
     text-align: right;
+    margin-left: 22px;
 }
 
-#pagina1 .navbar2 .navbar .navbar-content .foto-perfil {
-    position: absolute;
-    margin-left: 180%;
+.navbar .navbar-content .foto-perfil {
+    margin-left: 5px;
 }
 
-#pagina1 .navbar2 .navbar .navbar-content .foto-perfil img {
+.navbar .navbar-content .foto-perfil img {
     border-radius: 50%;
 }
 
 /*---------------TÍTULO---------------*/
 
-#pagina1 .titulo {
-    margin-left: 18%;
-    margin-top: 1%;
-    width: 50%;
+.conteudo-pagina {
+    margin-left: 220px;
+    display: flex;
+    flex-direction: column;
 }
 
-#pagina1 .titulo h1 {
+.conteudo-pagina .primeira-sessao {
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo-pagina .primeira-sessao .titulo {
+    margin-top: 20px;
+    margin-left: 43px;
+    width: 786px;
+}
+
+.conteudo-pagina .primeira-sessao .titulo h1 {
     color: #ED7839;
     font-family: Roboto-bold;
     font-size: 22px;
+}
+
+.conteudo-pagina .primeira-sessao .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-pagina .primeira-sessao .wrapper .botoes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 180px;
+}
+
+.conteudo-pagina .primeira-sessao .wrapper button {
+    background-color: #ED7839;
+    border-color: transparent;
+    border-radius: 4px;
+    height: 31px;
+}
+
+.conteudo-pagina .primeira-sessao .wrapper .botoes .button1-content {
+    color: #ffffff;
+    font-family: Roboto-bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 120px;
+}
+
+.conteudo-pagina .primeira-sessao .wrapper .botoes .button2-content, .botoes .button3-content {
+    width: 43px;
+    margin-left: 5px;
+}
+
+.conteudo-pagina .primeira-sessao .wrapper .botoes .button2-content img, .botoes .button3-content img {
+    margin-top: 4px;
+}
+
+.conteudo-pagina .primeira-sessao .wrapper .citar-trabalho {
+    text-align: right;
+    margin-top: 12px;
+    font-family: Roboto-medium;
+    color: #ED7839;
+    font-size: 14px;
+}
+
+.conteudo-pagina .video {
+    margin-left: 45px;
+    margin-top: 19px;
 }
