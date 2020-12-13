@@ -6,8 +6,13 @@
 /*---------------FONTES---------------*/
 
 @font-face {
-    font-family: 'Quicksand';
+    font-family: 'Quicksand-book';
     src: url('../../../assets/fontes/quicksand/Quicksand_Book.otf');
+}
+
+@font-face {
+    font-family: 'Quicksand-bold';
+    src: url('../../../assets/fontes/quicksand/Quicksand_Bold.otf');
 }
 
 @font-face {
@@ -70,7 +75,7 @@
 
 .sidebar .sidebar-topics {
     color: #725C5C;
-    font-family: Quicksand;
+    font-family: Quicksand-book;
     font-size: 15px;
 }
 
@@ -155,13 +160,15 @@
     border-radius: 50%;
 }
 
-/*---------------TÍTULO---------------*/
+/*---------------CONTEÚDO DA PÁGINA---------------*/
 
 .conteudo-pagina {
     margin-left: 220px;
     display: flex;
     flex-direction: column;
 }
+
+/*---------------Primeira Sessão---------------*/
 
 .conteudo-pagina .primeira-sessao {
     display: flex;
@@ -226,7 +233,151 @@
     font-size: 14px;
 }
 
-.conteudo-pagina .video {
+/*---------------Segunda Sessão---------------*/
+
+.conteudo-pagina .segunda-sessao {
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo-pagina .segunda-sessao .video {
     margin-left: 45px;
     margin-top: 19px;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes {
+    width: 242px;
+    height: 439px;
+    border: 1px solid #ECECEC;
+    border-radius: 3px;
+    margin-top: 19px;
+    margin-left: 154px;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .detalhes {
+    background-color: #FDF1EB;
+    border: 1px solid #ECECEC;
+    border-radius: 3px 3px 0px 0px;
+    width: 242px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .detalhes p {
+    color: #4E4E4E;
+    font-family: Roboto-medium;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .primeira-sessao-card, .sessoes-card-detalhes .segunda-sessao-card, .sessoes-card-detalhes .terceira-sessao-card {
+    display: flex;
+    flex-direction: row;
+    color: #5C5C5C;
+    font-family: Quicksand-book;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .primeira-sessao-card .apresentacao, .sessoes-card-detalhes .segunda-sessao-card .eixo, .sessoes-card-detalhes .terceira-sessao-card .chave {
+    margin-left: 15px;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .primeira-sessao-card .poster, .sessoes-card-detalhes .segunda-sessao-card .alimentacao, .sessoes-card-detalhes .terceira-sessao-card .alimentos {
+    margin-left: 5px;
+    font-family: Quicksand-bold;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .autores {
+    margin-top: 30px;
+    margin-left: 15px;
+    color: #5C5C5C;
+    font-family: Quicksand-book;
+    font-size: 15px;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .autores .titulo-autores {
+    font-family: Quicksand-bold;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .autores .galilei, .autores .morretes, .autores .newton, .autores .lattes, .autores .hawking {
+    margin-top: 5px;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .bibliografia {
+    margin-top: 45px;
+    margin-left: 15px;
+    color: #B6A7A8;
+    font-family: Quicksand-book;
+    font-size: 12px;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .barra-de-rolagem {
+    background-color: #E7E7E7;
+    width: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    height: 367px;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .barra-de-rolagem .barra-de-rolagem-selecionada {
+    background-color: #BFBFBF;
+    width: 5px;
+    height: 200px;
+}
+
+/*---------------Terceira Sessão---------------*/
+
+.conteudo-pagina .terceira-sessao {
+    margin-top: 30px;
+    margin-left: 43px;
+}
+
+.conteudo-pagina .terceira-sessao .resumo {
+    width: 1058px;
+    height: 204px;
+    border: 1px solid #ECECEC;
+    border-radius: 3px;
+}
+
+.conteudo-pagina .terceira-sessao .resumo .titulo-card-resumo {
+    background-color: #FDF1EB;
+    border: 1px solid #ECECEC;
+    border-radius: 3px 3px 0px 0px;
+    width: 1058px;
+    height: 45px;  
+
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-pagina .terceira-sessao .resumo .titulo-card-resumo p {
+    color: #4E4E4E;
+    font-family: Roboto-medium;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.conteudo-pagina .terceira-sessao .resumo .card-resumo-content {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: Quicksand-book;
+    font-size: 13.5px;
+    line-height: 23px;
+}
+
+.conteudo-pagina .terceira-sessao .resumo .card-resumo-content .ver-mais {
+    display: flex;
+    justify-content: flex-end;
+    font-family: Quicksand-bold;
+    margin-right: 6px;
+    margin-top: -25px;
+    color: #FA7E36;
 }
