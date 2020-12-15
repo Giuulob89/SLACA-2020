@@ -251,13 +251,14 @@
 
 .conteudo-pagina .segunda-sessao .video {
     margin-left: 4.5%;
+    width: 27%;
 }
 
 .conteudo-pagina .segunda-sessao .card-detalhes {
-    width: 24.2%;
+    width: 22%;
     border: 1px solid #ECECEC;
     border-radius: 3px;
-    margin-right: 4.5%;
+    margin-right: 4.2%;
 }
 
 .conteudo-pagina .segunda-sessao .card-detalhes .detalhes {
@@ -283,14 +284,27 @@
     justify-content: space-between;
 }
 
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .primeira-sessao-card {
+    margin-top: 3%;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .segunda-sessao-card, .sessoes-card-detalhes .terceira-sessao-card {
+    margin-top: 3.42%;
+}
+
 .conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .primeira-sessao-card, .sessoes-card-detalhes .segunda-sessao-card, .sessoes-card-detalhes .terceira-sessao-card {
     display: flex;
     flex-direction: row;
     color: #5C5C5C;
     font-family: Quicksand-book;
     font-size: 12px;
-    margin-top: 3.42%;
-    margin-bottom: 3.42%;
+    margin-bottom: 2%;
 }
 
 .conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .primeira-sessao-card .apresentacao, .sessoes-card-detalhes .segunda-sessao-card .eixo, .sessoes-card-detalhes .terceira-sessao-card .chave {
@@ -303,7 +317,7 @@
 }
 
 .conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .autores {
-    margin-top: 6.83%;
+    margin-top: 15%;
     margin-left: 6.2%;
     color: #5C5C5C;
     font-family: Quicksand-book;
@@ -319,7 +333,7 @@
 }
 
 .conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .bibliografia {
-    margin-top: 10.25%;
+    margin-top: 20%;
     margin-left: 6.2%;
     color: #B6A7A8;
     font-family: Quicksand-book;
@@ -332,6 +346,7 @@
     height: 367px;
     margin-right: 2.1%;
     margin-top: 2.28%;
+    margin-bottom: 10%;
 }
 
 .conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .barra-de-rolagem .barra-de-rolagem-selecionada {
@@ -380,15 +395,14 @@
     font-family: Quicksand-book;
     font-size: 13.5px;
     line-height: 23px;
+    letter-spacing: 0.02em;
 }
 
-.conteudo-pagina .terceira-sessao .resumo .card-resumo-content .ver-mais {
-    display: flex;
-    justify-content: flex-end;
+.conteudo-pagina .terceira-sessao .resumo .card-resumo-content a {
     font-family: Quicksand-bold;
-    margin-right: 330px;
-    margin-top: -25px;
+    font-size: ;
     color: #FA7E36;
+    text-decoration: none;
 }
 
 /*---------------Quarta Sessão---------------*/
@@ -530,9 +544,11 @@
 .footer {
     margin-left: 220px;
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .footer img {
     margin-left: 43px;
-    width: 1210px;
+    width: 85%;
 }
