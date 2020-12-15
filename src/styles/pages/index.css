@@ -398,12 +398,27 @@
     letter-spacing: 0.02em;
 }
 
-.conteudo-pagina .terceira-sessao .resumo .card-resumo-content a {
+.conteudo-pagina .terceira-sessao .resumo .card-resumo-content button {
     font-family: Quicksand-bold;
-    font-size: ;
+    font-size: 14px;
     color: #FA7E36;
     text-decoration: none;
+    border-color: transparent;
+    background-color: transparent;
+    outline-style: none;
 }
+
+.conteudo-pagina .terceira-sessao .resumo .card-resumo-content button:hover {
+    font-family: Quicksand-bold;
+    font-size: 14px;
+    color: #FDB02B;
+    text-decoration: none;
+    border-color: transparent;
+    background-color: transparent;
+    outline-style: none;
+}
+
+#mais{display: none;}
 
 /*---------------Quarta Sessão---------------*/
 
@@ -439,7 +454,7 @@
     text-align: center;
 }
 
-.conteudo-pagina .quarta-sessao .introducao-discussoes .divisoria {
+.conteudo-pagina .quarta-sessao .discussoes .divisoria {
     width: 97.33%;
     height: 0px;
     border: 1px solid #E7E7E7;
@@ -448,13 +463,13 @@
     margin-left: 1.34%;
 }
 
-.conteudo-pagina .quarta-sessao .introducao-discussoes .divisoria .botao-topico {
+.conteudo-pagina .quarta-sessao .discussoes .divisoria .botao-topico {
     display: flex;
     justify-content: center;
     margin-top: -16px;
 }
 
-.conteudo-pagina .quarta-sessao .introducao-discussoes .divisoria .botao-topico button {
+.conteudo-pagina .quarta-sessao .discussoes .divisoria .botao-topico button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -464,9 +479,20 @@
     border-radius: 4px;
     width: 133px;
     height: 32px;
+    outline-style: none;
 }
 
-.conteudo-pagina .quarta-sessao .introducao-discussoes .divisoria .botao-topico button p {
+.conteudo-pagina .quarta-sessao .discussoes .divisoria .botao-topico button:hover {
+    border-color: transparent;
+    background: #FDB02B;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    width: 133px;
+    height: 32px;
+    outline-style: none;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes .divisoria .botao-topico button p {
     color: #ffffff;
     margin-left: 6px;
     font-family: Quicksand-bold;
@@ -507,6 +533,7 @@
     font-size: 14px;
     color: #4D4D4D;
     margin-left: 2.15%;
+    margin-right: 2.15%;
     margin-top: 1.61%;
 }
 
@@ -537,6 +564,101 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
     color: #757575;
+}
+
+#introducao-depois {display: none;}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .titulo-introducao-depois {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.63%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .titulo-introducao-depois p {
+    font-family: Quicksand-book;
+    font-size: 14px;
+    color: #5C5C5C;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .assunto {
+    margin-left: 2%;
+    margin-top: 2.39%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .assunto p, .conteudo p {
+    font-family: Roboto-bold;
+    font-size: 16px;
+    color: #ED7839;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .assunto input, .conteudo input {
+    width: 97.33%;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 0px 0px;
+    outline-style: none;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .assunto input {
+    height: 4.24%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .assunto input::placeholder {
+    margin-left: 2.12%;
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .conteudo {
+    margin-left: 2%;
+    margin-top: 1.09%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .conteudo input {
+    height: 8.92%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .conteudo .input-footer {
+    width: 97.33%;
+    height: 27.43%;
+    background-color: #EAF1F2;
+    border: 1px solid #CCCCCC;
+    border-radius: 0px 0px 4px 4px;
+
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .conteudo .input-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .conteudo .input-footer .icones-texto {
+    margin-left: 2.68%;
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .conteudo .input-footer .icones-texto .italico {
+    margin-left: 100%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .conteudo .input-footer button {
+    height: 100%;
+    width: 18.78%;
+    border-color: transparent;
+    background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+    border-radius: 0px 0px 4px 0px;
+    outline-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .conteudo .input-footer button p {
+    font-family: Quicksand-bold;
+    font-size: 15px;
+    color: #ffffff;
 }
 
 /*---------------FOOTER---------------*/
