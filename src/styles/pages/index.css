@@ -429,6 +429,8 @@
 
 /*---------------Quarta Sessão---------------*/
 
+/*---------------Primeira Introdução Quarta Sessão---------------*/
+
 .conteudo-pagina .quarta-sessao .discussoes .introducao-discussoes {
     margin-top: 2.42%;
 }
@@ -522,6 +524,8 @@
     font-size: 15px;
 }
 
+/*---------------Cards Quarta Sessão---------------*/
+
 .conteudo-pagina .quarta-sessao .discussoes .card1-discussoes, .card2-discussoes, .card2-discussoes2 {
     background-color: #FFFFFF;
     width: 97.33%;
@@ -592,6 +596,8 @@
     font-size: 14px;
     color: #757575;
 }
+
+/*---------------Segunda Introdução Quarta Sessão---------------*/
 
 #introducao-depois {display: none;}
 
@@ -689,6 +695,8 @@
     color: #ffffff;
 }
 
+/*---------------Terceira Introdução Quarta Sessão---------------*/
+
 #introducao-apos-envio {display: none;}
 
 .conteudo-pagina .quarta-sessao .discussoes #introducao-apos-envio .titulo-introducao-apos-envio {
@@ -776,6 +784,8 @@
     text-decoration: underline;
     text-align: left;
 }
+
+/*---------------Card Expandido Quarta Sessão---------------*/
 
 #card2-2 {display: none;}
 

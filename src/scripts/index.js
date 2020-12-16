@@ -1,3 +1,5 @@
+/*---------------Função Ver Mais---------------*/
+
 function Vermais() {
     var pontos=document.getElementById("pontos");
     var maisTexto=document.getElementById("mais");
@@ -14,6 +16,48 @@ function Vermais() {
         btnVermais.style.display="none";
     }
 }
+
+/*---------------Função Criar Tópico---------------*/
+
+function CriarTopico() {
+    var introducaoantes = document.getElementById("introducao-antes");
+    var introducaodepois = document.getElementById("introducao-depois");
+    var btnCriarTopico = document.getElementById("btn-criar-topico");
+
+    if (introducaoantes.style.display === "none") {
+        introducaoantes.style.display = "inline";
+        introducaodepois.style.display = "none";
+        btnCriarTopico.innerHTML = "criar tópico";
+    }
+    else {
+        introducaoantes.style.display = "none";
+        introducaodepois.style.display = "inline";
+        btnCriarTopico.style.display = "none";
+    }
+}
+
+/*---------------Função Criar Novo Tópico---------------*/
+
+function CriarNovoTopico() {
+    var introducaoaposenvio = document.getElementById("introducao-apos-envio");
+    var introducaodepois = document.getElementById("introducao-depois");
+    var btnCriarTopico2 = document.getElementById("btn-criar-topico2");
+    var btnEnviar = document.getElementById("btn-enviar");
+
+    if (introducaoaposenvio.style.display === "none") {
+        introducaoaposenvio.style.display = "inline";
+        introducaodepois.style.display = "none";
+        btnCriarTopico2.innerHTML = "criar tópico";
+    }
+    else {
+        introducaoaposenvio.style.display = "none";
+        introducaodepois.style.display = "inline";
+        btnCriarTopico2.style.display = "none";
+        btnEnviar.style.display="inline"
+    }
+}
+
+/*---------------Função Enviar---------------*/
 
 function Enviar() {
     var introducaodepois = document.getElementById("introducao-depois");
@@ -34,6 +78,8 @@ function Enviar() {
     }
 }
 
+/*---------------Função Expandir Card---------------*/
+
 function ExpandirCard() {
     var card21 = document.getElementById("card2-1");
     var card22 = document.getElementById("card2-2");
@@ -49,6 +95,8 @@ function ExpandirCard() {
         card22.style.display = "inline"
     }
 }
+
+/*---------------Função Retrair Card---------------*/
 
 function RetrairCard() {
     var card21 = document.getElementById("card2-1");
