@@ -33,3 +33,35 @@ function Enviar() {
         btnCriarTopico2.style.display = "inline";
     }
 }
+
+function ExpandirCard() {
+    var card21 = document.getElementById("card2-1");
+    var card22 = document.getElementById("card2-2");
+    var clicarcard = document.getElementById("div-card2");
+
+    if(card21.style.display === "none") {
+        card21.style.display = "inline"
+        card22.style.display = "none"
+        clicarcard.style.display = "inline"
+    }
+    else {
+        card21.style.display = "none"
+        card22.style.display = "inline"
+    }
+}
+
+function RetrairCard() {
+    var card21 = document.getElementById("card2-1");
+    var card22 = document.getElementById("card2-2");
+    var clicarcard = document.getElementById("div-card22");
+
+    if(card22.style.display === "none") {
+        card22.style.display = "inline"
+        card21.style.display = "none"
+        clicarcard.style.display = "inline"
+    }
+    else {
+        card22.style.display = "none"
+        card21.style.display = "inline"
+    }
+}

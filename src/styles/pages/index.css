@@ -522,7 +522,7 @@
     font-size: 15px;
 }
 
-.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes, .card2-discussoes {
+.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes, .card2-discussoes, .card2-discussoes2 {
     background-color: #FFFFFF;
     width: 97.33%;
     margin-left: 1.5%;
@@ -532,10 +532,13 @@
     border-radius: 4px;
     height: 23.8%;
     margin-top: 2.67%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes, .card2-discussoes {
     margin-bottom: 2.42%;
 }
 
-.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes .titulo-card1-discussoes, .card2-discussoes .titulo-card2-discussoes {
+.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes .titulo-card1-discussoes, .card2-discussoes .titulo-card2-discussoes, .card2-discussoes2 .titulo-card2-discussoes {
     font-family: Quicksand-bold;
     font-size: 16px;
     color: #ED7839;
@@ -543,7 +546,7 @@
     margin-top: 2.74%;
 }
 
-.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes .autor-pergunta, .card2-discussoes .autor-pergunta {
+.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes .autor-pergunta, .card2-discussoes .autor-pergunta, .card2-discussoes2 .autor-pergunta {
     font-family: Quicksand-bold;
     font-size: 12px;
     color: #5C5C5C;
@@ -551,16 +554,17 @@
     margin-top: 0.48%;
 }
 
-.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes .pergunta, .card2-discussoes .pergunta {
+.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes .pergunta, .card2-discussoes .pergunta, .card2-discussoes2 .pergunta {
     font-family: Quicksand-book;
     font-size: 14px;
     color: #4D4D4D;
     margin-left: 2.15%;
     margin-right: 2.15%;
     margin-top: 1.61%;
+    line-height: 17px;
 }
 
-.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes .card1-footer, .card2-discussoes .card2-footer {
+.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes .card1-footer, .card2-discussoes .card2-footer, .card2-discussoes2 .card2-footer2 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -569,7 +573,7 @@
     margin-bottom: 2.67%;
 }
 
-.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes .card1-footer button, .card2-discussoes .card2-footer button {
+.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes .card1-footer button, .card2-discussoes .card2-footer button, .card2-discussoes2 .card2-footer2 button {
     width: 27px;
     height: 19px;
     border-color: transparent;
@@ -582,7 +586,7 @@
     margin-left: 15px;
 }
 
-.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes .card1-footer .likes, .card1-footer .numero-respostas, .card2-discussoes .card2-footer .likes, .card2-footer .numero-respostas {
+.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes .card1-footer .likes, .card1-footer .numero-respostas, .card2-discussoes .card2-footer .likes, .card2-footer .numero-respostas, .card2-discussoes2 .card2-footer2 .likes, .card2-discussoes2 .card2-footer2 .numero-respostas {
     margin-left: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
@@ -771,6 +775,78 @@
     color: #ED7839;
     text-decoration: underline;
     text-align: left;
+}
+
+#card2-2 {display: none;}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta, .card-resposta2 {
+    display: flex;
+    flex-direction: column;
+    width: 97.33%;
+    height: 10.62%;
+    background: #F8F8F8;
+    border: 1px solid #E7E7E7;
+    margin-left: 1.5%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta .introducao-card-resposta, .card-resposta2 .introducao-card-resposta {
+    margin-top: 2.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta .introducao-card-resposta .nome, .card-resposta2 .nome {
+    margin-left: 2.15%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta .introducao-card-resposta .nome p, .card-resposta2 .introducao-card-resposta .nome p {
+    font-family: Quicksand-bold;
+    font-size: 12px;
+    color: #5C5C5C;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta .introducao-card-resposta .autor-checked {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta .introducao-card-resposta .autor-checked .funcao {
+    margin-right: 60%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta .introducao-card-resposta .autor-checked .funcao p {
+    font-family: Quicksand-bold;
+    font-size: 14px;
+    color: #ED7839;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta .resposta-card, .card-resposta2 .resposta-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 92.7%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta .resposta-card {
+    margin-top: 0.3%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta2 .resposta-card {
+    margin-top: 1.5%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta .resposta-card p , .card-resposta2 .resposta-card p {
+    font-family: Quicksand-book;
+    font-size: 14px;
+    color: #4D4D4D;
+    line-height: 17px;
 }
 
 /*---------------FOOTER---------------*/
