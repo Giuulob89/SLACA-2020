@@ -145,7 +145,8 @@
                             Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus
                             condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque
                             sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum
-                            nisl, vel aliquet enim accumsan sit ametl accumsant<span id="pontos">...</span><span id="mais">sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus
+                            nisl, vel aliquet enim accumsan sit ametl accumsant<span id="pontos">...</span><span
+                                id="mais">sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus
                                 condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque
                                 sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.<br><br>
                                 Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus
@@ -191,6 +192,14 @@
                                 <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade?
                                     Deixe seus questionamentos ou sugestões para o autor!</p>
                             </div>
+                            <div class="divisoria">
+                                <div class="botao-topico">
+                                    <button onclick="CriarTopico()" id="btn-criar-topico"><img
+                                            src="../../assets/icons/icon - criar.svg" alt="Criar tópico">
+                                        <p>criar tópico</p>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </span>
                     <span id="introducao-depois">
@@ -209,20 +218,43 @@
                                     <img src="../../assets/icons/Shape.svg" alt="Negrito" class="negrito">
                                     <img src="../../assets/icons/Shape (1).svg" alt="Itálico" class="italico">
                                 </div>
-                                <button>
+                                <button onclick="Enviar()" id="btn-enviar">
                                     <p>Enviar</p>
                                 </button>
                             </div>
+                            <div class="divisoria2"></div>
                         </div>
                     </span>
-                    <div class="divisoria">
-                        <div class="botao-topico">
-                            <button onclick="CriarTopico()"><img src="../../assets/icons/icon - criar.svg"
-                                    alt="Criar tópico">
-                                <p>criar tópico</p>
-                            </button>
+                    <span id="introducao-apos-envio">
+                        <div class="titulo-introducao-apos-envio">
+                            <p>Seu tópico foi enviado com sucesso! :D</p>
                         </div>
-                    </div>
+                        <div class="paragrafo1-apos-envio">
+                            <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu
+                                tópico for respondido!</p>
+                        </div>
+                        <div class="paragrafo2-apos-envio">
+                            <p>Descubra outros trabalhos!</p>
+                        </div>
+                        <div class="divisoria3">
+                            <div class="botao-topico2">
+                                <button onclick="CriarNovoTopico()" id="btn-criar-topico2">
+                                    <p>criar novo tópico</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="aguardando-feedback">
+                            <div class="card-aguardando-feedback">
+                                <img src="../../assets/icons/check.svg" alt="check">
+                                <div class="aguardando">
+                                    <p>Aguardando feedback dos autores</p>
+                                </div>
+                                <div class="editar">
+                                    <p>Editar tópico</p>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
                     <div class="card1-discussoes">
                         <p class="titulo-card1-discussoes">Assunto da pergunta aparece aqui</p>
                         <p class="autor-pergunta">Carlos Henrique Santos</p>
