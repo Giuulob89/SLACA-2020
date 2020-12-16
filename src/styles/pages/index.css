@@ -1,0 +1,874 @@
+*, html, body {
+	margin:0;
+	padding:0;
+}
+
+/*---------------FONTES---------------*/
+
+@font-face {
+    font-family: 'Quicksand-book';
+    src: url('../../../assets/fontes/quicksand/Quicksand_Book.otf');
+}
+
+@font-face {
+    font-family: 'Quicksand-bold';
+    src: url('../../../assets/fontes/quicksand/Quicksand_Bold.otf');
+}
+
+@font-face {
+    font-family: 'Roboto-light';
+    src: url('../../../assets/fontes/roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url('../../../assets/fontes/roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-medium';
+    src: url('../../../assets/fontes/roboto/Roboto-Medium.ttf')
+}
+
+#pagina1 {
+    height: 100%;
+    width: 100%;
+}
+
+/*---------------SIDEBAR---------------*/
+
+.sidebar {
+    position: fixed;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    width: 220px;
+    height: 100%;
+}
+
+/*---------------Sidebar Header---------------*/
+
+.sidebar .sidebar-header {
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+    width: 220px;
+    height: 72px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .sidebar-header h1 {
+    color: #ffffff;
+    font-family: Roboto-bold;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*---------------Sidebar Image---------------*/
+
+.sidebar .sidebar-image img {
+    width: 220px;
+    height: 258px;
+}
+
+/*---------------Sidebar Topics---------------*/
+
+.sidebar .sidebar-topics {
+    color: #725C5C;
+    font-family: Quicksand-book;
+    font-size: 15px;
+}
+
+.sidebar .sidebar-topics .apresentacao, .sidebar-topics .comites, .sidebar-topics .autores, .sidebar-topics .eixos-tematicos, .sidebar-topics .trabalhos, .sidebar-topics .contato {
+    box-shadow: 0 2px 2px -2px gray;
+    width: 220px;
+    height: 33px;
+    margin-bottom: 0.5%;
+
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .sidebar-topics .apresentacao, .sidebar-topics .comites, .sidebar-topics .autores, .sidebar-topics .eixos-tematicos, .sidebar-topics .contato {
+    background-color: #ffffff;
+}
+
+.sidebar-topics .trabalhos .little-box {
+    background: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
+    width: 5px;
+    height: 33px;
+}
+
+.sidebar-topics .trabalhos {
+    background-color: #FDF1EB;
+}
+
+.sidebar .sidebar-topics p {
+    margin-left: 10.91%;
+}
+
+/*---------------NAVBAR---------------*/
+
+.navbar {
+    background-color: #FDF1EB;
+    height: 72px;
+    margin-left: 220px;
+
+    display: flex;
+}
+
+.navbar .navbar-content {
+    color: #725C5C;
+    font-family: Roboto-light;
+    font-size: 14px;
+    width: 92.7%;
+    margin-left: 3.6%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar .navbar-content .frases .frase2 {
+    font-size: 22px;
+}
+
+.navbar .navbar-content .segunda-parte-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar .navbar-content .segunda-parte-navbar .selecao-lingua {
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    color: #333333;
+    width: 130px;
+    height: 34px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .navbar-content .segunda-parte-navbar .selecao-lingua .lingua, .selecao-lingua .dropdown {
+    margin-top: 3%;
+}
+
+.navbar .navbar-content .segunda-parte-navbar .selecao-lingua .dropdown {
+    margin-left: 3%;
+}
+
+.navbar .navbar-content .segunda-parte-navbar .bem-vindo {
+    text-align: right;
+    margin-left: 10%;
+}
+
+/*---------------CONTEÚDO DA PÁGINA---------------*/
+
+.conteudo-pagina {
+    margin-left: 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*---------------Primeira Sessão---------------*/
+
+.conteudo-pagina .primeira-sessao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-left: 4.3%;
+}
+
+.conteudo-pagina .primeira-sessao .titulo {
+    width: 786px;
+}
+
+.conteudo-pagina .primeira-sessao .titulo h1 {
+    color: #ED7839;
+    font-family: Roboto-bold;
+    font-size: 22px;
+}
+
+.conteudo-pagina .primeira-sessao .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4.5%;
+}
+
+.conteudo-pagina .primeira-sessao .wrapper .botoes {
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo-pagina .primeira-sessao .wrapper button {
+    background-color: #ED7839;
+    border-color: transparent;
+    border-radius: 4px;
+    height: 31px;
+}
+
+.conteudo-pagina .primeira-sessao .wrapper .botoes .button1-content {
+    color: #ffffff;
+    font-family: Roboto-bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 120px;
+}
+
+.conteudo-pagina .primeira-sessao .wrapper .botoes .button2-content, .botoes .button3-content {
+    width: 43px;
+    margin-left: 2%;
+}
+
+.conteudo-pagina .primeira-sessao .wrapper .botoes .button2-content, .botoes .button3-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-pagina .primeira-sessao .wrapper .citar-trabalho {
+    text-align: right;
+    margin-top: 6%;
+    font-family: Roboto-medium;
+    color: #ED7839;
+    font-size: 14px;
+}
+
+/*---------------Segunda Sessão---------------*/
+
+.conteudo-pagina .segunda-sessao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1.9%;
+}
+
+.conteudo-pagina .segunda-sessao .video {
+    margin-left: 4.5%;
+    width: 27%;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes {
+    width: 22%;
+    border: 1px solid #ECECEC;
+    border-radius: 3px;
+    margin-right: 4.2%;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .detalhes {
+    background-color: #FDF1EB;
+    border: 1px solid #ECECEC;
+    border-radius: 3px 3px 0px 0px;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .detalhes p {
+    color: #4E4E4E;
+    font-family: Roboto-medium;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .primeira-sessao-card {
+    margin-top: 3%;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .segunda-sessao-card, .sessoes-card-detalhes .terceira-sessao-card {
+    margin-top: 3.42%;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .primeira-sessao-card, .sessoes-card-detalhes .segunda-sessao-card, .sessoes-card-detalhes .terceira-sessao-card {
+    display: flex;
+    flex-direction: row;
+    color: #5C5C5C;
+    font-family: Quicksand-book;
+    font-size: 12px;
+    margin-bottom: 2%;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .primeira-sessao-card .apresentacao, .sessoes-card-detalhes .segunda-sessao-card .eixo, .sessoes-card-detalhes .terceira-sessao-card .chave {
+    margin-left: 6.2%;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .primeira-sessao-card .poster, .sessoes-card-detalhes .segunda-sessao-card .alimentacao, .sessoes-card-detalhes .terceira-sessao-card .alimentos {
+    margin-left: 2.1%;
+    font-family: Quicksand-bold;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .autores {
+    margin-top: 15%;
+    margin-left: 6.2%;
+    color: #5C5C5C;
+    font-family: Quicksand-book;
+    font-size: 15px;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .autores .titulo-autores {
+    font-family: Quicksand-bold;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .autores .galilei, .autores .morretes, .autores .newton, .autores .lattes, .autores .hawking {
+    margin-top: 1.14%;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .sessoes-card-detalhes .bibliografia {
+    margin-top: 20%;
+    margin-left: 6.2%;
+    color: #B6A7A8;
+    font-family: Quicksand-book;
+    font-size: 12px;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .barra-de-rolagem {
+    background-color: #E7E7E7;
+    width: 5px;
+    height: 367px;
+    margin-right: 2.1%;
+    margin-top: 2.28%;
+    margin-bottom: 10%;
+}
+
+.conteudo-pagina .segunda-sessao .card-detalhes .card-detalhes-content .barra-de-rolagem .barra-de-rolagem-selecionada {
+    background-color: #BFBFBF;
+    width: 5px;
+    height: 200px;
+}
+
+/*---------------Terceira Sessão---------------*/
+
+.conteudo-pagina .terceira-sessao, .quarta-sessao {
+    margin-top: 3%;
+    margin-left: 4.3%;
+}
+
+.conteudo-pagina .terceira-sessao .resumo, .quarta-sessao .discussoes {
+    width: 95%;
+    border: 1px solid #ECECEC;
+    border-radius: 3px;
+}
+
+.conteudo-pagina .terceira-sessao .resumo {
+    height: 11.96%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes {
+    height: 53.90%;
+}
+
+.conteudo-pagina .terceira-sessao .resumo .titulo-card-resumo, .quarta-sessao .discussoes .titulo-card-discussoes {
+    background-color: #FDF1EB;
+    border: 1px solid #ECECEC;
+    border-radius: 3px 3px 0px 0px;
+    width: 100%;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-pagina .terceira-sessao .resumo .titulo-card-resumo p, .quarta-sessao .discussoes .titulo-card-discussoes p {
+    color: #4E4E4E;
+    font-family: Roboto-medium;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.conteudo-pagina .terceira-sessao .resumo .card-resumo-content {
+    margin-top: 2%;
+    margin-left: 1.43%;
+    margin-right: 1.43%;
+    margin-bottom: 2%;
+    font-family: Quicksand-book;
+    font-size: 13.5px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+}
+
+.conteudo-pagina .terceira-sessao .resumo .card-resumo-content button {
+    font-family: Quicksand-bold;
+    font-size: 14px;
+    color: #FA7E36;
+    text-decoration: none;
+    border-color: transparent;
+    background-color: transparent;
+    outline-style: none;
+}
+
+.conteudo-pagina .terceira-sessao .resumo .card-resumo-content button:hover {
+    font-family: Quicksand-bold;
+    font-size: 14px;
+    color: #FDB02B;
+    text-decoration: none;
+    border-color: transparent;
+    background-color: transparent;
+    outline-style: none;
+}
+
+#mais{display: none;}
+
+/*---------------Quarta Sessão---------------*/
+
+/*---------------Primeira Introdução Quarta Sessão---------------*/
+
+.conteudo-pagina .quarta-sessao .discussoes .introducao-discussoes {
+    margin-top: 2.42%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes .introducao-discussoes .compartilhe {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto-bold;
+    font-size: 18px;
+    color: #ED7839;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes .introducao-discussoes .icones-introducao {
+    display: flex;
+    justify-content: center;
+    margin-top: 4.35%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes .introducao-discussoes .sabia {
+    margin-top: 4.35%;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes .introducao-discussoes .sabia p {
+    font-family: Quicksand-book;
+    font-size: 14px;
+    color: #595959;
+    width: 60%;
+    text-align: center;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-antes .introducao-discussoes .divisoria, #introducao-depois .divisoria2, #introducao-apos-envio .divisoria3 {
+    width: 97.33%;
+    height: 0px;
+    border: 1px solid #E7E7E7;
+    background-color: #E7E7E7;
+    margin-top: 5%;
+    margin-left: 1.34%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .divisoria2 {
+    margin-left: 0.2%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-antes .introducao-discussoes .divisoria .botao-topico, #introducao-apos-envio .divisoria3 .botao-topico2 {
+    display: flex;
+    justify-content: center;
+    margin-top: -16px;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-apos-envio .divisoria3 .botao-topico2 {
+    margin-top: -18px;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-antes .introducao-discussoes .divisoria .botao-topico button, #introducao-apos-envio .divisoria3 .botao-topico2 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-color: transparent;
+    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    outline-style: none;
+    height: 32px;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-antes .introducao-discussoes .divisoria .botao-topico button {
+    width: 133px;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-apos-envio .divisoria3 .botao-topico2 button {
+    width: 235.15px;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-antes .introducao-discussoes .divisoria .botao-topico button:hover, #introducao-apos-envio .divisoria3 .botao-topico2 button:hover {
+    border-color: transparent;
+    background: #FDB02B;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    width: 133px;
+    height: 32px;
+    outline-style: none;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-antes .introducao-discussoes .divisoria .botao-topico button p, #introducao-apos-envio .divisoria3 .botao-topico2 button p {
+    color: #ffffff;
+    margin-left: 6px;
+    font-family: Quicksand-bold;
+    font-size: 15px;
+}
+
+/*---------------Cards Quarta Sessão---------------*/
+
+.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes, .card2-discussoes, .card2-discussoes2 {
+    background-color: #FFFFFF;
+    width: 97.33%;
+    margin-left: 1.5%;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    height: 23.8%;
+    margin-top: 2.67%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes, .card2-discussoes {
+    margin-bottom: 2.42%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes .titulo-card1-discussoes, .card2-discussoes .titulo-card2-discussoes, .card2-discussoes2 .titulo-card2-discussoes {
+    font-family: Quicksand-bold;
+    font-size: 16px;
+    color: #ED7839;
+    margin-left: 2.15%;
+    margin-top: 2.74%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes .autor-pergunta, .card2-discussoes .autor-pergunta, .card2-discussoes2 .autor-pergunta {
+    font-family: Quicksand-bold;
+    font-size: 12px;
+    color: #5C5C5C;
+    margin-left: 2.15%;
+    margin-top: 0.48%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes .pergunta, .card2-discussoes .pergunta, .card2-discussoes2 .pergunta {
+    font-family: Quicksand-book;
+    font-size: 14px;
+    color: #4D4D4D;
+    margin-left: 2.15%;
+    margin-right: 2.15%;
+    margin-top: 1.61%;
+    line-height: 17px;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes .card1-footer, .card2-discussoes .card2-footer, .card2-discussoes2 .card2-footer2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 2.15%;
+    margin-top: 1.93%;
+    margin-bottom: 2.67%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes .card1-footer button, .card2-discussoes .card2-footer button, .card2-discussoes2 .card2-footer2 button {
+    width: 27px;
+    height: 19px;
+    border-color: transparent;
+    background: #ED7839;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes .card1-discussoes .card1-footer .likes, .card1-footer .numero-respostas, .card2-discussoes .card2-footer .likes, .card2-footer .numero-respostas, .card2-discussoes2 .card2-footer2 .likes, .card2-discussoes2 .card2-footer2 .numero-respostas {
+    margin-left: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #757575;
+}
+
+/*---------------Segunda Introdução Quarta Sessão---------------*/
+
+#introducao-depois {display: none;}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .titulo-introducao-depois {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.63%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .titulo-introducao-depois p {
+    font-family: Quicksand-book;
+    font-size: 14px;
+    color: #5C5C5C;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .assunto {
+    margin-left: 2%;
+    margin-top: 2.39%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .assunto p, .conteudo p {
+    font-family: Roboto-bold;
+    font-size: 16px;
+    color: #ED7839;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .assunto input, .conteudo input {
+    width: 97.33%;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 0px 0px;
+    outline-style: none;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .assunto input {
+    height: 39px;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .assunto input::placeholder {
+    font-family: Quicksand-book;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .conteudo {
+    margin-left: 2%;
+    margin-top: 1.09%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .conteudo input {
+    height: 113px;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .conteudo .input-footer {
+    width: 97.33%;
+    height: 31px;
+    background-color: #EAF1F2;
+    border: 1px solid #CCCCCC;
+    border-radius: 0px 0px 4px 4px;
+
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .conteudo .input-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .conteudo .input-footer .icones-texto {
+    margin-left: 2.68%;
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .conteudo .input-footer .icones-texto .italico {
+    margin-left: 100%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .conteudo .input-footer button {
+    height: 108%;
+    width: 18.78%;
+    border-color: transparent;
+    background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+    border-radius: 0px 0px 4px 0px;
+    outline-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-depois .conteudo .input-footer button p {
+    font-family: Quicksand-bold;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+/*---------------Terceira Introdução Quarta Sessão---------------*/
+
+#introducao-apos-envio {display: none;}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-apos-envio .titulo-introducao-apos-envio {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.63%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-apos-envio .titulo-introducao-apos-envio p {
+    font-family: Roboto-bold;
+    font-size: 18px;
+    color: #ED7839;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-apos-envio .paragrafo1-apos-envio {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.96%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-apos-envio .paragrafo1-apos-envio p {
+    font-family: Quicksand-book;
+    font-size: 14px;
+    color: #595959;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-apos-envio .paragrafo2-apos-envio {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.16%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-apos-envio .paragrafo2-apos-envio p {
+    font-family: Quicksand-book;
+    font-size: 14px;
+    color: #F48F44;
+    text-decoration: underline;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-apos-envio .aguardando-feedback {
+    margin-top: 3.05%;
+    margin-left: 1.5%;
+    width: 97.33%;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-apos-envio .aguardando-feedback {
+    background-image: url(../../../assets/images/Group\ 82.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-apos-envio .aguardando-feedback .card-aguardando-feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-apos-envio .aguardando-feedback .card-aguardando-feedback img {
+    margin-top: 15%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-apos-envio .aguardando-feedback .card-aguardando-feedback .aguardando {
+    margin-top: 5.26%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-apos-envio .aguardando-feedback .card-aguardando-feedback .aguardando p {
+    font-family: Quicksand-bold;
+    font-size: 16px;
+    color: #707070;
+    text-align: left;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-apos-envio .aguardando-feedback .card-aguardando-feedback .editar {
+    margin-top: 5.41%;
+    margin-bottom: 15%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #introducao-apos-envio .aguardando-feedback .card-aguardando-feedback .editar p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #ED7839;
+    text-decoration: underline;
+    text-align: left;
+}
+
+/*---------------Card Expandido Quarta Sessão---------------*/
+
+#card2-2 {display: none;}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta, .card-resposta2 {
+    display: flex;
+    flex-direction: column;
+    width: 97.33%;
+    height: 10.62%;
+    background: #F8F8F8;
+    border: 1px solid #E7E7E7;
+    margin-left: 1.5%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta .introducao-card-resposta, .card-resposta2 .introducao-card-resposta {
+    margin-top: 2.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta .introducao-card-resposta .nome, .card-resposta2 .nome {
+    margin-left: 2.15%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta .introducao-card-resposta .nome p, .card-resposta2 .introducao-card-resposta .nome p {
+    font-family: Quicksand-bold;
+    font-size: 12px;
+    color: #5C5C5C;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta .introducao-card-resposta .autor-checked {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta .introducao-card-resposta .autor-checked .funcao {
+    margin-right: 60%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta .introducao-card-resposta .autor-checked .funcao p {
+    font-family: Quicksand-bold;
+    font-size: 14px;
+    color: #ED7839;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta .resposta-card, .card-resposta2 .resposta-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 92.7%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta .resposta-card {
+    margin-top: 0.3%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta2 .resposta-card {
+    margin-top: 1.5%;
+}
+
+.conteudo-pagina .quarta-sessao .discussoes #card2-2 .card-resposta .resposta-card p , .card-resposta2 .resposta-card p {
+    font-family: Quicksand-book;
+    font-size: 14px;
+    color: #4D4D4D;
+    line-height: 17px;
+}
+
+/*---------------FOOTER---------------*/
+
+.footer {
+    margin-left: 220px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer img {
+    margin-left: 43px;
+    width: 85%;
+}
